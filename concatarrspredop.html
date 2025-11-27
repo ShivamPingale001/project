@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concatenate Arrays</title>
+</head>
+<body>
+
+<h1>Concatenate Two Arrays</h1>
+
+<input type="text" id="arr1" placeholder="Enter Array 1 (e.g., 1,2,3)">
+<br><br>
+<input type="text" id="arr2" placeholder="Enter Array 2 (e.g., 4,5,6)">
+<br><br>
+<button onclick="concatenateArrays()">Concatenate</button>
+
+<h3>Result:</h3>
+<div id="output"></div>
+
+<script>
+function concatenateArrays() {
+    let array1 = document.getElementById("arr1").value.split(",").map(Number);
+    let array2 = document.getElementById("arr2").value.split(",").map(Number);
+
+    let combined = [...array1, ...array2];
+
+    document.getElementById("output").innerText = combined.join(", ");
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Multiplication Table</h1>
+    <button onclick="showTable()">
+        Show Table
+    </button>
+    <script>
+        function showTable() {
+            let n = prompt('Enter number for table:');
+            n = parseInt(n);
+            let table = '';
+            for (let i = 1; i <= 10; i++) {
+                table += `${n} × ${i} = ${n * i}\n`;
+            }
+            alert(table);
+        }
+    </script>
+</body>
+
+</html>

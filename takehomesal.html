@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Salary Calculator</h1>
+    <input type="number" id="basic" placeholder="Basic Salary">
+    <button onclick="calcSalary()">
+
+    </button>
+    <div id="salary"></div>
+    <script>
+        function calcSalary() {
+            let basic = parseFloat(
+                document.getElementById('basic').value);
+            let hra = basic * 0.10;
+            let da = basic * 0.05;
+            let pt = 200;
+            let gross = basic + hra + da;
+            let net = gross - pt;
+
+            document.getElementById('salary').innerHTML = `
+        <p>Basic: ${basic}</p>
+        <p>HRA: ${hra}</p>
+        <p>DA: ${da}</p>
+        <p>Gross: ${gross}</p>
+        <p>PT: ${pt}</p>
+        <p>Net: ${net}</p>
+      `;
+        }
+    </script>
+</body>
+
+</html>

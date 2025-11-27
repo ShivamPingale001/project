@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+
+    <h2>Calculator</h2>
+
+    <input type="number" id="n1" placeholder="Enter first number">
+    <input type="number" id="n2" placeholder="Enter second number">
+    <br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h3>Results:</h3>
+    Addition: <output id="add"></output><br>
+    Subtraction: <output id="sub"></output><br>
+    Multiplication: <output id="mul"></output><br>
+    Division: <output id="div"></output>
+
+    <script>
+        function calculate() {
+            let a = parseFloat(document.getElementById("n1").value);
+            let b = parseFloat(document.getElementById("n2").value);
+
+            document.getElementById("add").value = a + b;
+            document.getElementById("sub").value = a - b;
+            document.getElementById("mul").value = a * b;
+            document.getElementById("div").value = a / b;
+        }
+    </script>
+
+</body>
+
+</html>

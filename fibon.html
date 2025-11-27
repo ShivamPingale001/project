@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Fibonacci Series</h1>
+    <input type="number" id="count" placeholder="Number of terms">
+    <button onclick="showFibonacci()">
+        Generate
+    </button>
+    <div id="fib"></div>
+    <script>
+        function showFibonacci() {
+            let count = parseInt(
+                document.getElementById('count').value);
+            let a = 0, b = 1;
+            let series = [];
+
+            for (let i = 0; i < count; i++) {
+                series.push(a);
+                let c = a + b;
+                a = b;
+                b = c;
+            }
+
+            document.getElementById('fib').innerHTML =
+                `<p>${series.join(', ')}</p>`;
+        }
+    </script>
+</body>
+
+</html>

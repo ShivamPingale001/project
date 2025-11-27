@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Split Array Using Function</title>
+</head>
+<body>
+
+<h1>Split Array Example</h1>
+
+<input type="text" id="arr" placeholder="Enter array: 1,2,3,4,5">
+<input type="number" id="n" placeholder="Enter split position">
+<button onclick="splitArray()">Split Array</button>
+
+<div id="output"></div>
+
+<script>
+    function split_array(array, n) {
+        let left = array.slice(0, n);
+        let right = array.slice(n);
+        return { left, right };
+    }
+
+    function splitArray() {
+        let arr = document.getElementById('arr').value.split(',').map(Number);
+        let n = parseInt(document.getElementById('n').value);
+
+        let result = split_array(arr, n);
+
+        document.getElementById('output').innerHTML = `
+            <p>Left Array: ${result.left.join(', ')}</p>
+            <p>Right Array: ${result.right.join(', ')}</p>
+        `;
+    }
+</script>
+
+</body>
+</html>
+

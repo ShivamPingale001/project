@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rest Operator Example</title>
+</head>
+<body>
+
+<h3>Enter numbers separated by commas:</h3>
+<input type="text" id="numbers" placeholder="e.g., 10,20,30">
+<button onclick="processNumbers()">Submit</button>
+
+<p id="elements"></p>
+<p id="sum"></p>
+<p id="average"></p>
+
+<script>
+function processNumbers() {
+    let input = document.getElementById("numbers").value;
+    let numArray = input.split(',').map(Number);
+
+    // Function using rest operator
+    function calculate(...nums) {
+        let sum = nums.reduce((a, b) => a + b, 0);
+        let avg = sum / nums.length;
+        return { nums, sum, avg };
+    }
+
+    let result = calculate(...numArray);
+
+    document.getElementById("elements").innerText = "Elements: " + result.nums.join(", ");
+    document.getElementById("sum").innerText = "Sum: " + result.sum;
+    document.getElementById("average").innerText = "Average: " + result.avg.toFixed(2);
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color using jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        input, p {
+            padding: 10px;
+            margin: 10px 0;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Change Background Color Example</h2>
+
+<p>This is a paragraph.</p>
+<p>Another paragraph example.</p>
+
+<input type="text" placeholder="Enter text here">
+<input type="text" placeholder="Another textbox">
+
+<br>
+<button id="changeColor">Set Background Color</button>
+
+<script>
+$(document).ready(function(){
+    $("#changeColor").click(function(){
+        $("p").css("background-color", "lightyellow");
+
+        $("input[type='text']").css("background-color", "lightblue");
+    });
+});
+</script>
+
+</body>
+</html>
+

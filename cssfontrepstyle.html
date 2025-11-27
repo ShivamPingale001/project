@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Styling Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: 'Verdana', sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            line-height: 1.5;
+        }
+
+        .banner {
+            background-image: url('https://via.placeholder.com/800x200');
+            background-repeat: no-repeat;  
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 28px;
+        }
+
+        .pattern {
+            background-image: url('https://via.placeholder.com/100');
+            background-repeat: repeat;  
+            height: 150px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .links {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .links a {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to My Styled Web Page</h1>
+
+<div class="banner">Banner Section (No Repeat)</div>
+
+<div class="pattern">Pattern Section (Repeated Image)</div>
+
+<p>This paragraph uses the Verdana font and demonstrates basic text styling using CSS.</p>
+<p>Another paragraph to show line spacing and margin adjustments. CSS allows easy control of text appearance.</p>
+
+<div class="links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+</body>
+</html>
+

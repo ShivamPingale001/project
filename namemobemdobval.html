@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Form with Validations</title>
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+
+    <label>Name:</label><br>
+    <input type="text" name="name" required minlength="3" placeholder="Enter your name"><br><br>
+
+    <label>Mobile Number:</label><br>
+    <input type="tel" name="mobile" required pattern="[0-9]{10}" placeholder="10-digit number"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required placeholder="example@gmail.com"><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" required minlength="6"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other<br><br>
+
+    <label>Address:</label><br>
+    <textarea name="address" required placeholder="Enter your address"></textarea><br><br>
+
+
+    <input type="checkbox" required> I agree to terms & conditions<br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
+

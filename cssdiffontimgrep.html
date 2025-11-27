@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Fonts & Background Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: 'Verdana', sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            line-height: 1.5;
+        }
+
+        .no-repeat-banner {
+            background-image: url('https://via.placeholder.com/800x200');
+            background-repeat: no-repeat; 
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 28px;
+        }
+
+        .repeated-pattern {
+            background-image: url('https://via.placeholder.com/100');
+            background-repeat: repeat;   
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to My Styled Web Page</h1>
+
+<div class="no-repeat-banner">Banner Section (No Repeat)</div>
+
+<div class="repeated-pattern">Pattern Section (Repeated Image)</div>
+
+<p>This paragraph uses the Verdana font. You can see how different font styles are applied using CSS.</p>
+<p>This paragraph is another example with different font styling and line spacing.</p>
+
+</body>
+</html>
+

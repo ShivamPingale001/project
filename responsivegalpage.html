@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>My Image Gallery</h2>
+
+<div class="gallery">
+    <img src="img.jpg" alt="Image 1">
+    <img src="img.jpg" alt="Image 2">
+    <img src="img.jpg" alt="Image 3">
+    <img src="img.jpg" alt="Image 4">
+    <img src="img.jpg" alt="Image 5">
+</div>
+
+</body>
+</html>
+

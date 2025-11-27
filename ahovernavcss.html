@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Navigation Menu</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Navigation Bar */
+        .nav {
+            background: black;
+            padding: 10px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 10px;
+            display: inline-block;
+
+            /* animation transition */
+            transition: 0.3s ease;
+        }
+
+        /* Hover Animation */
+        .nav a:hover {
+            background: white;
+            color: black;
+            transform: scale(1.2); /* grows on hover */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+</body>
+</html>
+
